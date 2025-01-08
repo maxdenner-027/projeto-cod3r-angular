@@ -15,3 +15,8 @@ form {
 .acoes > button:nth-child(2) {
     margin-left: 10px;
 }
+
+.danger {
+    background-color: rgb(227,94,107) !important;
+    color: #fff !important;
+}

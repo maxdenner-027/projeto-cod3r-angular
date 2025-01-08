@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TituloService } from 'src/app/components/template/header/titulo.service';
 
 @Component({
   selector: 'app-crud',
@@ -8,11 +9,12 @@ import { Router } from '@angular/router';
 })
 export class CrudComponent implements OnInit {
 
-  constructor(private router:Router) {
-
+  constructor(private router: Router, private tituloService: TituloService) {
   }
 
-  ngOnInit(): void { }
+  ngOnInit(): void {
+    this.tituloService.definirTituloAtual("Gerenciamento de Produtos");
+  }
 
   navegarParaCriacao(): void {
     this.router.navigate(['/produtos/novo']);

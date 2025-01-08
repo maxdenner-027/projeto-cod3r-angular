@@ -1,0 +1,11 @@
+.tabela {
+    margin-top: 15px;
+}
+
+i.edit {
+    color: #d9cd26;
+}
+
+i.delete {
+    color: #e35e6b;
+}
